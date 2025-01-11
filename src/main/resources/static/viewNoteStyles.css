@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #343a40;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.section-title {
+    margin-top: 20px;
+    color: #343a40;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #6c757d;
+    margin-top: 40px;
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.about-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-content {
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #6c757d;
+    margin-top: 40px;
+}
