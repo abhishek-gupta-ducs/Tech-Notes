@@ -1,8 +1,8 @@
-FROM maven:3.8.5-openjdk-17 AS build
+FROM openjdk:23-jdk AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
-FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/Tech-Notes-0.0.1-SNAPSHOT.jar Tech-Notes.jar
+FROM eclipse-temurin:23-jdk-alpine
+COPY --from=build /target/Tech-Notes-0.0.1-SNAPSHOT.war Tech-Notes.war
 EXPOSE 8080
-ENTRYPOINT [ "java", "-jar", "Tech-Notes.jar" ]
+ENTRYPOINT [ "java", "-jar", "Tech-Notes.war" ]

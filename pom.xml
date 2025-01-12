@@ -12,6 +12,7 @@
 	<artifactId>Tech-Notes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Tech-Notes</name>
+	<packaging>war</packaging>
 	<description>Java Spring Boot Application to view, edit, add, delete technical notes</description>
 	<url/>
 	<licenses>
@@ -27,13 +28,19 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>23</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>3.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -74,6 +81,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>Tech-Notes</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
